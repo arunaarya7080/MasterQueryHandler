@@ -3,6 +3,9 @@
  * example.php
  * ----------------------
  * Demonstrates usage of MasterQueryHandler
+ *  Folder - config/MasterQueryHandler.php
+ *  Folder - config/env.php
+ *  Folder - project/index.php
  */
 require __DIR__ . '/config/MasterQueryHandler.php';
 
@@ -16,4 +19,5 @@ $insertData = [
     'password' => '12345'
 ];
 $insertResult = $db->insert('users', $insertData,true);
+
 echo "<pre>"; print_r($insertResult); echo "</pre>";
